@@ -2,7 +2,7 @@ import FrameOverlay from "../components/FrameOverlay";
 import LogoSlider from "../components/LogoSlider";
 import PastEvents from "../components/PastEvents";
 import SocialsLinks from "../components/socialsLinks";
-import "/src/assets/css/home.css";
+import "/src/assets/css/home/home.css";
 import { ArrowUpRight } from "lucide-react";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
       <main className="mainHome">
         <div className="mainBgImgBg">
           <div className="mainBgImgContainer">
-            <img src="/mainBg.png" alt="" className="mainBg" />
+            <img src="/home/mainBg.png" alt="" className="mainBg" />
           </div>
         </div>
         <div className="mainContent">
@@ -25,7 +25,7 @@ const Home = () => {
               RECRUITING MEMBERS !!
             </a>
             <div className="cardImgContainer">
-              <img src="/qr-twitter.png" alt="" className="cardImg" />
+              <img src="/home/qr-twitter.png" alt="" className="cardImg" />
               <a href="/events" className="joinUsText">
                 JOIN US!
                 <ArrowUpRight className="arrowIcon" size={40} />

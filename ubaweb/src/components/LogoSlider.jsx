@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "/src/assets/css/logoSlider.css";
+import "/src/assets/css/home/logoSlider.css";
 
 const LogoSlider = () => {
   const [isPaused, setIsPaused] = useState(false);

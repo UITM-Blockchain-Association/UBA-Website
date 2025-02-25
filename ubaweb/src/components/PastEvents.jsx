@@ -1,30 +1,42 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
-import "/src/assets/css/pastEvents.css";
+import "/src/assets/css/home/pastEvents.css";
 
 const PastEvents = () => {
   const eventTypes = [
     {
       type: "Hackathon Events",
       images: [
-        "/mainBg.png",
-        "/hackathon1.png",
-        "/hackathon2.png",
-        "/hackathon3.png",
+        "/home/mainBg.png",
+        "/home/hackathon1.png",
+        "/home/hackathon2.png",
+        "/home/hackathon3.png",
       ],
     },
     {
       type: "Workshop Events",
-      images: ["/workshop1.png", "/workshop2.png", "/workshop3.png"],
+      images: [
+        "/home/workshop1.png",
+        "/home/workshop2.png",
+        "/home/workshop3.png",
+      ],
     },
     {
       type: "Conference Events",
-      images: ["/conference1.png", "/conference2.png", "/conference3.png"],
+      images: [
+        "/home/conference1.png",
+        "/home/conference2.png",
+        "/home/conference3.png",
+      ],
     },
     {
       type: "Networking Events",
-      images: ["/networking1.png", "/networking2.png", "/networking3.png"],
+      images: [
+        "/home/networking1.png",
+        "/home/networking2.png",
+        "/home/networking3.png",
+      ],
     },
   ];
 
@@ -66,20 +78,6 @@ const PastEvents = () => {
         <div className="event-listing">
           <h2 className="event-title">Past Events</h2>
 
-          {/* <div className="event-items">
-            <div className="event-box featured-event">
-              <p className="event-text">Hackathon Events</p>
-            </div>
-            <div className="event-box">
-              <p className="event-text">Hackathon Events</p>
-            </div>
-            <div className="event-box">
-              <p className="event-text">Hackathon Events</p>
-            </div>
-            <div className="event-box">
-              <p className="event-text">Hackathon Events</p>
-            </div>
-          </div> */}
           <div className="event-items">
             {/* Map through the event types */}
             {eventTypes.map((event, index) => (

@@ -1,31 +1,31 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import "/src/assets/css/socialsLinks.css";
+import "/src/assets/css/home/socialsLinks.css";
 
 const socialLinks = [
   {
     name: "TWITTER",
     class: "twitter",
-    qr: "/qr-twitter.png",
+    qr: "/home/qr-twitter.png",
     link: "https://x.com/ubachain/",
   },
   {
     name: "INSTAGRAM",
     class: "instagram",
-    qr: "/qr-instagram.png",
+    qr: "/home/qr-instagram.png",
     link: "https://www.instagram.com/uitmblockchainassociation/",
   },
   {
     name: "LINKEDIN",
     class: "linkedin",
-    qr: "/qr-linkedin.png",
+    qr: "/home/qr-linkedin.png",
     link: "https://www.linkedin.com/company/uitm-blockchain-association/",
   },
   {
     name: "DISCORD",
     class: "discord",
-    qr: "/qr-discord.png",
+    qr: "/home/qr-discord.png",
     link: "https://discord.gg/9WwHK9KWR5",
   },
 ];
