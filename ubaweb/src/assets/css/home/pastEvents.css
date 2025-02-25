@@ -1,0 +1,140 @@
+.secondContent {
+  width: 100vw;
+  height: fit-content;
+  padding: 0 80px;
+}
+
+/* Container */
+.past-events-container {
+  width: calc(1040 / 16 * 1em);
+  height: calc(520 / 16 * 1em);
+  padding: calc(16 / 16 * 1em);
+  margin: 0 auto;
+  border-radius: 33px;
+  overflow: hidden;
+  background-color: var(--white);
+  display: flex;
+  margin-top: 15rem;
+}
+
+/* Left section */
+.event-listing {
+  width: 50%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* h2 */
+.event-title {
+  font-size: calc(48 / 16 * 1em);
+  font-weight: 400;
+  color: var(--black);
+  letter-spacing: calc(((-6 / 100) * 16) / 16 * 1em); /* from % to px to em*/
+  padding-left: calc(8 / 16 * 1em);
+  margin-bottom: calc(10 / 16 * 1em);
+}
+
+.event-items {
+  display: flex;
+  flex-direction: column;
+  gap: calc(20 / 16 * 1em);
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.event-box {
+  width: calc(450 / 16 * 1em);
+  height: calc(50 / 16 * 1em);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: calc(20 / 16 * 1em);
+  padding-top: calc(16 / 16 * 1em);
+  padding-bottom: calc(16 / 16 * 1em);
+  border-bottom: 1px solid var(--black);
+}
+
+.featured-event {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.event-text {
+  font-weight: 300;
+  font-size: calc(20 / 16 * 1em);
+  letter-spacing: calc(((5 / 100) * 16) / 16 * 1em); /* from % to px to em*/
+  text-align: left;
+}
+
+.event-divider {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Call to action button */
+.cta-button {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: calc(20 / 16 * 1em);
+  padding-bottom: calc(20 / 16 * 1em);
+}
+
+.cta-btn {
+  background-color: #14b8a6;
+  color: var(--white);
+  padding: calc(19 / 16 * 1em) calc(21 / 16 * 1em);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 300;
+  /* transition: background 0.3s ease-in-out; */
+  font-size: calc(17 / 16 * 1em);
+}
+
+.cta-btn:hover {
+  background-color: #0d9488;
+}
+/* //*   */
+/* Right section */
+.image-container {
+  width: 50%;
+  position: relative;
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container .eventPhotos {
+  object-fit: cover; /* Keeps aspect ratio while covering the container */
+}
+
+/* Navigation buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-btn.left {
+  left: 16px;
+}
+
+.nav-btn.right {
+  right: 16px;
+}
